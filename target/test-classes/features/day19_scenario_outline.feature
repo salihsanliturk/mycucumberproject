@@ -14,7 +14,7 @@ Feature: search_using_scenario_outline
 
 
     Examples: test_data
-      |column    |
+      |column  |
       |iPhone  |
       |tea pot |
       |tesla   |

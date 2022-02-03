@@ -8,8 +8,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "./src/test/resources/features",
         glue = "stepdefinitions",
-        tags = "@employee_login_scenario_outline",
-        dryRun = false
+        tags = "@register",
+        dryRun = true
 
 
 )
