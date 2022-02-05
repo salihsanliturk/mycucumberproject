@@ -16,6 +16,8 @@ public class MoneyTransferPage {
     public WebElement transferTo;
     @FindBy(id = "balance")
     public WebElement balance;
+    @FindBy(id = "balancecent")
+    public WebElement balanceCent;
     @FindBy(id="description")
     public WebElement description;
     @FindBy(id = "make-transfer")
