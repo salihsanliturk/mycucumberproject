@@ -8,9 +8,22 @@ Feature: employee_login
     And user sends password "<password>"
     And user clicks on the login button
     Then close the application
+
     Examples: credentials
-      |username       |password  |
-      |gino.wintheiser|%B6B*q1!TH|
+      |username       |password       |
+      |gino.wintheiser|%B6B*q1!TH     |
+      |dallas.batz    |dOWjuXz8*es6   |
+      |leonel.skiles  |	x3uvY0f8hw1T  |
+      |freddy.veum    |	*f**3dafHW3Jx |
+      |syble.jerde    |	2*0R*!K&GB3T%G|
+      |julius.keebler |	F&134#R%0d    |
+      |jeanette.haag  |	yjTXNFhnTLG0  |
+      |eloisa.kub	  |U59hk^@$VG9J   |
+      |angus.spencer  |	QKzuQiTUp5r1s^|
+
+
+
+
 #1. create teh feature file
 #2. Run runner and generate missing step definitions: @employee_login_scenario_outline
 #3. Put the step definitions in the LoginStepDefs class

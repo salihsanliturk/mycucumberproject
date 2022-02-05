@@ -3,21 +3,18 @@ package stepdefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import pages.CommonPageElements;
-import pages.MoneyTransferPage;
 
-public class RegisterationStepDefs {
-    CommonPageElements commonPageElements = new CommonPageElements();
-    MoneyTransferPage moneyTransferPage = new MoneyTransferPage();
+public class MoneyTransferStepDefs {
+
+
 
     @Given("user clicks on my operations")
     public void user_clicks_on_my_operations() {
-        commonPageElements.myOperations.click();
+
 
     }
-    @Given("user clicks on transfer money")
-    public void user_clicks_on_transfer_money() {
-        commonPageElements.moneyTransferOption.click();
+    @Given("user clicks on money transfer money")
+    public void user_clicks_on_money_transfer_money() {
 
     }
     @When("user select the current account to transfer money from")
@@ -32,8 +29,8 @@ public class RegisterationStepDefs {
     public void user_provides_the_balance(String string) {
 
     }
-    @When("user types the description")
-    public void user_types_the_description() {
+    @When("user type description")
+    public void user_type_description() {
 
     }
     @Then("user makes the money transfer and verify success message")

@@ -8,8 +8,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "./src/test/resources/features",
         glue = "stepdefinitions",
-        tags = "@register",
-        dryRun = true
+        tags = "@money_transfer",
+        dryRun = false
 
 
 )

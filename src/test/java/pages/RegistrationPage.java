@@ -1,37 +1,42 @@
 package pages;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
-
-public class RegisterPage {
-    public RegisterPage(){
+public class RegistrationPage {
+    public RegistrationPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
-
     @FindBy(id = "ssn")
-    public WebElement ssnBox;
+    public WebElement ssnTextbox;
+
     @FindBy(id = "firstname")
-    public WebElement firstName;
+    public WebElement firstnameTextbox;
+
     @FindBy(id = "lastname")
-    public WebElement lastName;
+    public WebElement lastnameTextbox;
+
     @FindBy(id = "address")
-    public WebElement address;
+    public WebElement addressTextbox;
+
     @FindBy(id = "mobilephone")
-    public WebElement phone;
+    public WebElement mobilephoneTextbox;
+
     @FindBy(id = "username")
-    public WebElement username;
+    public WebElement usernameTextbox;
+
     @FindBy(id = "email")
-    public WebElement email;
+    public WebElement emailTextbox;
+
     @FindBy(id = "firstPassword")
-    public WebElement firstPassword;
+    public WebElement firstPasswordTextbox;
+
     @FindBy(id = "secondPassword")
-    public WebElement passwordConfirmation;
+    public WebElement newPasswordTextbox;
+
     @FindBy(id = "register-submit")
     public WebElement registerButton;
-    @FindBy(xpath= "//*[.='Registration saved!']")
-    public WebElement successMessage;
 
-
+    @FindBy(xpath = "//*[text()='Registration saved!']")
+    public WebElement successMessageToastContainer;
 }

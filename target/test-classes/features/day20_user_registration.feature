@@ -1,21 +1,20 @@
-Feature: User Gives Credentials For Registering
+@user_registration
+Feature:  registration feature
 
-  Scenario Outline: User Register
-    Given User is on register page
-    And user sends ssn "<ssn>"
-    And user sends firstname as "<firstname>" and lastname as "<lastname>"
-    And user sends as "<address>"
-    And user sends phone numbers as "<phone_number>"
-    And user sends as "<username>"
-    And user sends as "<email>"
-    And user sends as "<new_password>"
-    And user sends as second password "<new_password_confirmation>"
-    And user clicks register button
-    Then user see pop up "<message>"
-    Then user close application
+  Scenario Outline: user should be able to register
+
+    Given  user is on the registration page
+    And user enters ssn number as "<SSN>"
+    And user enters firstname as "<firstName>" and lastname as "<lastName>"
+    And user provides address "<address>"
+    And user provides phoneNumber "<phoneNumber>"
+    And user provides username "<username>"
+    And user provides email "<email>"
+    And user provides username "<username>"
+    And user provides the firstPassword as "<firstPassword>" and secondPassword as "<secondPassword>"
+    And user click on the register button and see the success message as "<successMessage>"
 
 
-
-    Examples: Register Data
-      | ssn       | firstname |lastname | address | phone_number | username   |email         |new_password   | new_password_confirmation | message               |
-      |883-05-2002|New User   |last     |Milky way|456-279-5588  |utilisateur78|sth@gmail.com|Utilisateur123.|Utilisateur123.            |successfully registered|
+    Examples:  user info
+    |SSN|firstName|lastName|address|phoneNumber|username|email|firstPassword|secondPassword|successMessage|
+    |393-45-1278|New User|last|Milky way|456-279-5588|utilisateur|salih34@gmail.com|Utilisateur123.|Utilisateur123.|successfully registered|

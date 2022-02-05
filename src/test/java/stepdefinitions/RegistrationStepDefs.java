@@ -1,79 +1,67 @@
 package stepdefinitions;
 
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 import org.junit.Assert;
-import pages.RegisterPage;
+import pages.RegistrationPage;
 import utilities.ConfigurationReader;
 import utilities.Driver;
 
-public class RegisterStepDefs {
-    RegisterPage registerPage = new RegisterPage();
+public class RegistrationStepDefs {
 
-    @Given("User is on register page")
-    public void user_is_on_register_page() {
+
+    RegistrationPage registrationPage = new RegistrationPage();
+    @Given("user is on the registration page")
+    public void user_is_on_the_registration_page() {
         Driver.getDriver().get(ConfigurationReader.getProperty("gmiBank_registration_url"));
 
     }
-
-    @When("user sends ssn {string}")
-    public void user_sends_ssn(String ssn) {
-        registerPage.ssnBox.sendKeys(ssn);
-
-    }
-
-    @When("user sends firstname as {string} and lastname as {string}")
-    public void user_sends_firstname_as_and_lastname_as(String firstName, String lastName) {
-        registerPage.firstName.sendKeys(firstName);
-        registerPage.lastName.sendKeys(lastName);
+    @Given("user enters ssn number as {string}")
+    public void user_enters_ssn_number_as(String string) {
+     //   registrationPage.ssnTextbox.sendKeys(string);
+     // NOTE: there is a reusable method in the driver class.
+     // We can use it for sending the text to the element
+     // It will wait when needed as well
+        Driver.waitAndSendText(registrationPage.ssnTextbox,string);
 
     }
-
-    @When("user sends phone number as {string}")
-    public void user_sends_phone_number_as(String phoneNumber) {
-        registerPage.phone.sendKeys(phoneNumber);
-
-    }
-
-    @When("user clicks register button")
-    public void user_clicks_register_button() {
-        registerPage.registerButton.click();
+    @Given("user enters firstname as {string} and lastname as {string}")
+    public void user_enters_firstname_as_and_lastname_as(String string, String string2) {
+        Driver.waitAndSendText(registrationPage.firstnameTextbox,string);
+        Driver.waitAndSendText(registrationPage.lastnameTextbox,string2);
 
     }
-
-    @Then("user see pop up {string}")
-    public void user_see_pop_up(String successMessage) throws InterruptedException {
-        Thread.sleep(3000);
-        Assert.assertTrue(registerPage.successMessage.isDisplayed());
+    @Given("user provides address {string}")
+    public void user_provides_address(String string) {
+        Driver.waitAndSendText(registrationPage.addressTextbox,string);
 
     }
-
-    @And("user sends address as {string}")
-    public void userSendsAddressAs(String address) {
-        registerPage.address.sendKeys(address);
-    }
-
-    @And("user sends username as {string}")
-    public void userSendsUsernameAs(String username) {
-        registerPage.username.sendKeys(username);
-    }
-
-    @When("user sends  email as {string}")
-    public void user_sends_email_as(String email) {
-        registerPage.email.sendKeys(email);
+    @Given("user provides phoneNumber {string}")
+    public void user_provides_phone_number(String string) {
+        Driver.waitAndSendText(registrationPage.mobilephoneTextbox,string);
 
     }
+    @Given("user provides username {string}")
+    public void user_provides_username(String string) {
+        Driver.waitAndSendText(registrationPage.usernameTextbox,string);
 
-    @When("user sends second password as {string}")
-    public void user_sends_second_password_as(String firstPassword) {
-        registerPage.firstPassword.sendKeys(firstPassword);
     }
+    @Given("user provides email {string}")
+    public void user_provides_email(String string) {
+        Driver.waitAndSendText(registrationPage.emailTextbox,string);
 
+    }
+    @Given("user provides the firstPassword as {string} and secondPassword as {string}")
+    public void user_provides_the_first_password_as_and_second_password_as(String string, String string2) {
+        Driver.waitAndSendText(registrationPage.firstPasswordTextbox,string);
+        Driver.waitAndSendText(registrationPage.newPasswordTextbox,string2);
 
-    @And("user sends new password as {string}")
-    public void userSendsNewPasswordAs(String newPassword) {
-        registerPage.passwordConfirmation.sendKeys(newPassword);
+    }
+    @Given("user click on the register button and see the success message as {string}")
+    public void user_click_on_the_register_button_and_see_the_success_message_as(String string) {
+        registrationPage.registerButton.click();
+
+  //      Driver.waitAndClick(registrationPage.registerButton);
+  //      Assert.assertTrue(registrationPage.successMessageToastContainer.isDisplayed());
+
     }
 }

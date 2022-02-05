@@ -9,14 +9,13 @@ public class MoneyTransferPage {
     public MoneyTransferPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
+
     @FindBy(id = "fromAccountId")
     public WebElement transferFrom;
     @FindBy(id = "toAccountId")
     public WebElement transferTo;
     @FindBy(id = "balance")
     public WebElement balance;
-    @FindBy(id = "balancecent")
-    public WebElement balanceCent;
     @FindBy(id="description")
     public WebElement description;
     @FindBy(id = "make-transfer")
