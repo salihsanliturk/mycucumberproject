@@ -1,4 +1,4 @@
-@employee_login_scenario_outline
+@employee_login_scenario_outline @smoke
 Feature: employee_login
   Scenario Outline: login_with_employee_credentials
     Given user is on the login page

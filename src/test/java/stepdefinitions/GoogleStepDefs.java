@@ -11,11 +11,12 @@ import utilities.Driver;
 
 public class GoogleStepDefs {
     GooglePage googlePage = new GooglePage();
+
     @Given("user is on the google page")
     public void user_is_on_the_google_page() {
-        //Our JAVA Logic Goes Here
-        //THIS IS SAME AS @Test In JUnit or testNG
-
+//        OUR JAVA LOGIC GOES HERE
+//        THIS IS SAME AS @Test in Junit or test ng
+        Driver.getDriver().get("https://www.google.com");
         Driver.getDriver().get("https://www.google.com");
         try {
             Driver.getDriver().findElement(By.id("L2AGLb")).click();
@@ -43,6 +44,7 @@ public class GoogleStepDefs {
     public void verify_the_result_has_tea_pot_related_results() {
         String title = Driver.getDriver().getTitle();
         Assert.assertTrue(title.contains("Tea Pot"));
+       Assert.assertTrue(false);//FAILING ON PURPOSE
     }
 
     @When("user search for flower on google")
@@ -67,6 +69,7 @@ public class GoogleStepDefs {
     public void verify_the_result_has(String string) {
         String title = Driver.getDriver().getTitle();
         Assert.assertTrue(title.contains(string));
+
     }
 
 }

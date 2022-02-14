@@ -1,5 +1,6 @@
 package stepdefinitions;
 
+import com.github.javafaker.Faker;
 import io.cucumber.java.en.Given;
 import org.junit.Assert;
 import pages.RegistrationPage;
@@ -10,6 +11,8 @@ public class RegistrationStepDefs {
 
 
     RegistrationPage registrationPage = new RegistrationPage();
+    Faker faker = new Faker();
+
     @Given("user is on the registration page")
     public void user_is_on_the_registration_page() {
         Driver.getDriver().get(ConfigurationReader.getProperty("gmiBank_registration_url"));
@@ -21,11 +24,15 @@ public class RegistrationStepDefs {
      // NOTE: there is a reusable method in the driver class.
      // We can use it for sending the text to the element
      // It will wait when needed as well
+        string=faker.idNumber().ssnValid();
         Driver.waitAndSendText(registrationPage.ssnTextbox,string);
 
     }
     @Given("user enters firstname as {string} and lastname as {string}")
     public void user_enters_firstname_as_and_lastname_as(String string, String string2) {
+
+        string=faker.name().firstName();
+        string2=faker.name().lastName();
         Driver.waitAndSendText(registrationPage.firstnameTextbox,string);
         Driver.waitAndSendText(registrationPage.lastnameTextbox,string2);
 
@@ -42,11 +49,14 @@ public class RegistrationStepDefs {
     }
     @Given("user provides username {string}")
     public void user_provides_username(String string) {
+        string=faker.name().username();
         Driver.waitAndSendText(registrationPage.usernameTextbox,string);
+
 
     }
     @Given("user provides email {string}")
     public void user_provides_email(String string) {
+        string=faker.internet().emailAddress();
         Driver.waitAndSendText(registrationPage.emailTextbox,string);
 
     }

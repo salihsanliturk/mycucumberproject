@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="4" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="13" time="174.479">
+    <testcase classname="employee_login" name="login_with_employee_credentials" time="16.951">
+        <system-out><![CDATA[Given user is on the login page.............................................passed
+And user clicks on login dropdown...........................................passed
+And user clicks on sign in button...........................................passed
+And user sends username "gino.wintheiser"...................................passed
+And user sends password "%B6B*q1!TH"........................................passed
+And user clicks on the login button.........................................passed
+Then close the application..................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="employee_login" name="login_with_employee_credentials_2" time="12.31">
+        <system-out><![CDATA[Given user is on the login page.............................................passed
+And user clicks on login dropdown...........................................passed
+And user clicks on sign in button...........................................passed
+And user sends username "dallas.batz".......................................passed
+And user sends password "dOWjuXz8*es6"......................................passed
+And user clicks on the login button.........................................passed
+Then close the application..................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="employee_login" name="login_with_employee_credentials_3" time="11.859">
+        <system-out><![CDATA[Given user is on the login page.............................................passed
+And user clicks on login dropdown...........................................passed
+And user clicks on sign in button...........................................passed
+And user sends username "leonel.skiles".....................................passed
+And user sends password "x3uvY0f8hw1T"......................................passed
+And user clicks on the login button.........................................passed
+Then close the application..................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="employee_login" name="login_with_employee_credentials_4" time="12.01">
+        <system-out><![CDATA[Given user is on the login page.............................................passed
+And user clicks on login dropdown...........................................passed
+And user clicks on sign in button...........................................passed
+And user sends username "freddy.veum".......................................passed
+And user sends password "*f**3dafHW3Jx".....................................passed
+And user clicks on the login button.........................................passed
+Then close the application..................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="employee_login" name="login_with_employee_credentials_5" time="11.816">
+        <system-out><![CDATA[Given user is on the login page.............................................passed
+And user clicks on login dropdown...........................................passed
+And user clicks on sign in button...........................................passed
+And user sends username "syble.jerde".......................................passed
+And user sends password "2*0R*!K&GB3T%G"....................................passed
+And user clicks on the login button.........................................passed
+Then close the application..................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="employee_login" name="login_with_employee_credentials_6" time="13.57">
+        <system-out><![CDATA[Given user is on the login page.............................................passed
+And user clicks on login dropdown...........................................passed
+And user clicks on sign in button...........................................passed
+And user sends username "julius.keebler"....................................passed
+And user sends password "F&134#R%0d"........................................passed
+And user clicks on the login button.........................................passed
+Then close the application..................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="employee_login" name="login_with_employee_credentials_7" time="11.592">
+        <system-out><![CDATA[Given user is on the login page.............................................passed
+And user clicks on login dropdown...........................................passed
+And user clicks on sign in button...........................................passed
+And user sends username "jeanette.haag".....................................passed
+And user sends password "yjTXNFhnTLG0"......................................passed
+And user clicks on the login button.........................................passed
+Then close the application..................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="employee_login" name="login_with_employee_credentials_8" time="10.851">
+        <failure message="unknown error: Cannot construct KeyEvent from non-typeable key&#10;  (Session info: chrome=98.0.4758.80)&#10;Build info: version: '4.1.1', revision: 'e8fcc2cecf'&#10;System info: host: 'Salih-Air', ip: '2001:14bb:677:3594:53b:265b:f97a:ec17%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.1', java.version: '17.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [bc72ea67c625c8cce87a2797dd71ec37, sendKeysToElement {id=fa46f618-d41f-4fa9-bd5c-bee78e60d1ad, value=[Ljava.lang.CharSequence;@3d0d120b}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.80, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /var/folders/mk/gvr78d4x0dj...}, goog:chromeOptions: {debuggerAddress: localhost:62676}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:62676/devtoo..., se:cdpVersion: 98.0.4758.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on MAC (bc72ea67c625c8cce87a2797dd71ec37)] -&gt; id: password]&#10;Session ID: bc72ea67c625c8cce87a2797dd71ec37" type="org.openqa.selenium.WebDriverException"><![CDATA[Given user is on the login page.............................................passed
+And user clicks on login dropdown...........................................passed
+And user clicks on sign in button...........................................passed
+And user sends username "eloisa.kub"........................................passed
+And user sends password "U59hk^@$VG9J"......................................failed
+And user clicks on the login button.........................................skipped
+Then close the application..................................................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: unknown error: Cannot construct KeyEvent from non-typeable key
+  (Session info: chrome=98.0.4758.80)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'Salih-Air', ip: '2001:14bb:677:3594:53b:265b:f97a:ec17%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.1', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bc72ea67c625c8cce87a2797dd71ec37, sendKeysToElement {id=fa46f618-d41f-4fa9-bd5c-bee78e60d1ad, value=[Ljava.lang.CharSequence;@3d0d120b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.80, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /var/folders/mk/gvr78d4x0dj...}, goog:chromeOptions: {debuggerAddress: localhost:62676}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:62676/devtoo..., se:cdpVersion: 98.0.4758.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (bc72ea67c625c8cce87a2797dd71ec37)] -> id: password]
+Session ID: bc72ea67c625c8cce87a2797dd71ec37
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.sendKeys(Unknown Source)
+	at stepdefinitions.LoginStepDefs.user_sends_password(LoginStepDefs.java:49)
+	at ✽.user sends password "U59hk^@$VG9J"(file:///Users/salihsanliturk/IdeaProjects/mycucumberproject/./src/test/resources/features/day19_employee_login.feature:8)
+]]></failure>
+    </testcase>
+    <testcase classname="employee_login" name="login_with_employee_credentials_9" time="1.844">
+        <failure message="unknown error: Cannot construct KeyEvent from non-typeable key&#10;  (Session info: chrome=98.0.4758.80)&#10;Build info: version: '4.1.1', revision: 'e8fcc2cecf'&#10;System info: host: 'Salih-Air', ip: '2001:14bb:677:3594:53b:265b:f97a:ec17%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.1', java.version: '17.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [bc72ea67c625c8cce87a2797dd71ec37, sendKeysToElement {id=fed352e0-9d6d-4404-8445-8fbbfb6f6a62, value=[Ljava.lang.CharSequence;@69bc9584}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.80, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /var/folders/mk/gvr78d4x0dj...}, goog:chromeOptions: {debuggerAddress: localhost:62676}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:62676/devtoo..., se:cdpVersion: 98.0.4758.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on MAC (bc72ea67c625c8cce87a2797dd71ec37)] -&gt; id: password]&#10;Session ID: bc72ea67c625c8cce87a2797dd71ec37" type="org.openqa.selenium.WebDriverException"><![CDATA[Given user is on the login page.............................................passed
+And user clicks on login dropdown...........................................passed
+And user clicks on sign in button...........................................passed
+And user sends username "angus.spencer".....................................passed
+And user sends password "QKzuQiTUp5r1s^"....................................failed
+And user clicks on the login button.........................................skipped
+Then close the application..................................................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: unknown error: Cannot construct KeyEvent from non-typeable key
+  (Session info: chrome=98.0.4758.80)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'Salih-Air', ip: '2001:14bb:677:3594:53b:265b:f97a:ec17%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.1', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bc72ea67c625c8cce87a2797dd71ec37, sendKeysToElement {id=fed352e0-9d6d-4404-8445-8fbbfb6f6a62, value=[Ljava.lang.CharSequence;@69bc9584}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.80, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /var/folders/mk/gvr78d4x0dj...}, goog:chromeOptions: {debuggerAddress: localhost:62676}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:62676/devtoo..., se:cdpVersion: 98.0.4758.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (bc72ea67c625c8cce87a2797dd71ec37)] -> id: password]
+Session ID: bc72ea67c625c8cce87a2797dd71ec37
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
+	at jdk.internal.reflect.GeneratedMethodAccessor55.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.sendKeys(Unknown Source)
+	at stepdefinitions.LoginStepDefs.user_sends_password(LoginStepDefs.java:49)
+	at ✽.user sends password "QKzuQiTUp5r1s^"(file:///Users/salihsanliturk/IdeaProjects/mycucumberproject/./src/test/resources/features/day19_employee_login.feature:8)
+]]></failure>
+    </testcase>
+    <testcase classname="money transfer feature" name="login_with_customer_credentials" time="1.457">
+        <failure message="unknown error: Cannot construct KeyEvent from non-typeable key&#10;  (Session info: chrome=98.0.4758.80)&#10;Build info: version: '4.1.1', revision: 'e8fcc2cecf'&#10;System info: host: 'Salih-Air', ip: '2001:14bb:677:3594:53b:265b:f97a:ec17%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.1', java.version: '17.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [bc72ea67c625c8cce87a2797dd71ec37, sendKeysToElement {id=b596ef0d-1beb-443f-88f9-1007fa844878, value=[Ljava.lang.CharSequence;@26bb92e2}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.80, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /var/folders/mk/gvr78d4x0dj...}, goog:chromeOptions: {debuggerAddress: localhost:62676}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:62676/devtoo..., se:cdpVersion: 98.0.4758.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on MAC (bc72ea67c625c8cce87a2797dd71ec37)] -&gt; id: password]&#10;Session ID: bc72ea67c625c8cce87a2797dd71ec37" type="org.openqa.selenium.WebDriverException"><![CDATA[Given user is on the login page.............................................passed
+And user clicks on login dropdown...........................................passed
+And user clicks on sign in button...........................................passed
+And user sends username "shaylee.lindgren"..................................passed
+And user sends password "mVSk$eq1YoZwq".....................................failed
+And user clicks on the login button.........................................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: unknown error: Cannot construct KeyEvent from non-typeable key
+  (Session info: chrome=98.0.4758.80)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'Salih-Air', ip: '2001:14bb:677:3594:53b:265b:f97a:ec17%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.1', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bc72ea67c625c8cce87a2797dd71ec37, sendKeysToElement {id=b596ef0d-1beb-443f-88f9-1007fa844878, value=[Ljava.lang.CharSequence;@26bb92e2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.80, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /var/folders/mk/gvr78d4x0dj...}, goog:chromeOptions: {debuggerAddress: localhost:62676}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:62676/devtoo..., se:cdpVersion: 98.0.4758.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (bc72ea67c625c8cce87a2797dd71ec37)] -> id: password]
+Session ID: bc72ea67c625c8cce87a2797dd71ec37
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
+	at jdk.internal.reflect.GeneratedMethodAccessor55.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.sendKeys(Unknown Source)
+	at stepdefinitions.LoginStepDefs.user_sends_password(LoginStepDefs.java:49)
+	at ✽.user sends password "mVSk$eq1YoZwq"(file:///Users/salihsanliturk/IdeaProjects/mycucumberproject/./src/test/resources/features/day20_user_money_transfer.feature:10)
+]]></failure>
+    </testcase>
+    <testcase classname="money transfer feature" name="user_should_make_money_transfer" time="55.492">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user clicks on my operations..........................................passed
+And user clicks on money transfer money.....................................undefined
+When user select the current account to transfer money from.................skipped
+And user select the other account to transfer money to......................skipped
+When user provides the balance "3"..........................................skipped
+And user type description...................................................skipped
+Then user makes the money transfer and verify success message...............skipped
+Then close the application..................................................skipped
+]]></failure>
+    </testcase>
+    <testcase classname="registration feature" name="user should be able to register" time="11.047">
+        <system-out><![CDATA[Given user is on the registration page......................................passed
+And user enters ssn number as "393-45-1278".................................passed
+And user enters firstname as "New User" and lastname as "last"..............passed
+And user provides address "Milky way".......................................passed
+And user provides phoneNumber "456-279-5588"................................passed
+And user provides username "utilisateur"....................................passed
+And user provides email "salih34@gmail.com".................................passed
+And user provides username "utilisateur"....................................passed
+And user provides the firstPassword as "Utilisateur123." and secondPassword as "Utilisateur123.".passed
+And user click on the register button and see the success message as "successfully registered".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="admin login feature" name="login_with_employee_credentials" time="2.943">
+        <system-out><![CDATA[Given user is on the login page.............................................passed
+And user clicks on login dropdown...........................................passed
+And user clicks on sign in button...........................................passed
+And user enters admin_id and admin_password.................................passed
+And user clicks on the login button.........................................passed
+Then verify the login is successful.........................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

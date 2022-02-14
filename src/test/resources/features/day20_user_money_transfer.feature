@@ -1,4 +1,4 @@
-@money_transfer
+@money_transfer @smoke
 Feature: money transfer feature
 
   Scenario Outline: login_with_customer_credentials
@@ -21,9 +21,10 @@ Feature: money transfer feature
       And user clicks on money transfer money
       When user select the current account to transfer money from
       And user select the other account to transfer money to
-      When user provides the balance "5"
+      When user provides the balance "3"
       And user type description
       Then user makes the money transfer and verify success message
+      Then close the application
 
 
 

@@ -1,3 +1,8 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
 package pages;
 
 import org.openqa.selenium.WebElement;
@@ -6,22 +11,36 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
 public class MoneyTransferPage {
-    public MoneyTransferPage(){
-        PageFactory.initElements(Driver.getDriver(),this);
-    }
-
-    @FindBy(id = "fromAccountId")
+    @FindBy(
+            id = "fromAccountId"
+    )
     public WebElement transferFrom;
-    @FindBy(id = "toAccountId")
+    @FindBy(
+            id = "toAccountId"
+    )
     public WebElement transferTo;
-    @FindBy(id = "balance")
+    @FindBy(
+            id = "balance"
+    )
     public WebElement balance;
-    @FindBy(id = "balancecent")
+    @FindBy(
+            id = "balancecent"
+    )
     public WebElement balanceCent;
-    @FindBy(id="description")
+    @FindBy(
+            id = "description"
+    )
     public WebElement description;
-    @FindBy(id = "make-transfer")
+    @FindBy(
+            id = "make-transfer"
+    )
     public WebElement makeTransferButton;
-    @FindBy(xpath = "//*[text()='Transfer is succesfull']")
+    @FindBy(
+            xpath = "//*[text()='Transfer is succesfull']"
+    )
     public WebElement successMessageToastContainer;
+
+    public MoneyTransferPage() {
+        PageFactory.initElements(Driver.getDriver(), this);
+    }
 }

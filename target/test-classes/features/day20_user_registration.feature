@@ -1,4 +1,4 @@
-@user_registration
+@user_registration @smoke
 Feature:  registration feature
 
   Scenario Outline: user should be able to register
