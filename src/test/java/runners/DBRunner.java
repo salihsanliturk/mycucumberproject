@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         },
         features = "./src/test/resources/features",
         glue = "stepdefinitions",//run stepdefinitions and Hooks folder
-        tags = "@read_feature",
+        tags = " @db_customer_1",
         dryRun = false
 )
 public class DBRunner {
